@@ -42,3 +42,28 @@ Once the project moves into development, the press release can be used as a touc
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+
+<!-- 
+Computer Code Chat App
+
+Code Chat
+
+Code Chat is a way for any programmer to freely communicate with whomever they please while appearing to be diligently coding away in the programming language of your choice.
+
+Code Chat is a web application that allows you to chat with whomever you want, whenever you want, while appearing to be writing code.  Code Chat will take all of your sent and recieved messages and display them as beautiful javascript code.  Code Chat is the perfect application to use in class, at work or any other time when you really should be programming instead of chatting with your friends.
+
+Strict managers or professors who do not allow the use of instant messaging services during work or class force us to put our lives on hold while in that environment.  
+
+Code Chat solves this problem by turning your messages into what appears to be some very clean javascript code, so you always appear to be working as hard as ever.
+
+Using code chat is as easy as making an account, connecting to a friend and starting a chat.
+
+"Now that I am using Code Chat I can chat with my friends all day long right infront of my boss.  It's great!"
+
+Now that you have heard about Code Chat, stop reading and start chatting. Make an account now at www.repiit.com 
+ -->
+
+
+
+
