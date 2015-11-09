@@ -1,0 +1,13 @@
+<div ng-controller="ChatCtrl" id='container'>
+<!-- Your code here -->
+  <ul>
+    <li ng-repeat="message in data.messages">{{message.username}}: {{message.message}}</li>
+  </ul>
+<form name="myForm">
+  <input name="urlInput" ng-model='newMessage' required/> 
+</form>
+
+  <button ng-click="sendMessage(newMessage)" ng-disabled="myForm.urlInput.$invalid">Send Message</button>
+</div>
+
+
