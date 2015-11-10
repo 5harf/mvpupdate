@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client'));
 
 mongoose.connect('mongodb://localhost/codeChat'); // connect to mongo database named shortly
+
 Message.remove({}, function(err) {});
 
 app.post('/message' , function(req, res) {

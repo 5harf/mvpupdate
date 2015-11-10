@@ -1,4 +1,4 @@
-exports.codify = function(message) {
+exports.codify = function(message) {  
   var ary = message.split(' ');
   var cap = function (string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
