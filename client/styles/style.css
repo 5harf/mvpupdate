@@ -5,18 +5,23 @@ body {
   /*font-family: arial, sans-serif;*/
 }
 #invisible {
-  opacity: 0;
+    display: inline-block;
+    opacity: 0;
+}
+
+#comment {
+  display: inline-block;
 }
 
 #messages {
-  margin-top: 150px;
-  margin-left: 150px;
+  margin-top: 114px;
+  margin-left: 170px;
   font-size: 12px;
   font-family: "Lucida Console", Monaco, monospace;
 }
 
 html { 
-  background: url('../assets/replit.png') no-repeat center center fixed; 
+  background: url('../assets/rep.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

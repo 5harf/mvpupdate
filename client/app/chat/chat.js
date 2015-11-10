@@ -4,19 +4,24 @@ angular.module('chat', [])
   // Your code here
   $scope.data = {};
   $scope.getMessages = function () {
-    var message = Send.getMessages();
-    $scope.data.messages = message;
+    Send.getMessages()
+    .then(function(messages) {
+      $scope.data.messages = messages;
+    });
   };
   $scope.sendMessage = function(message) {
     Send.sendMessage(message)
-    .then(function(message) {
-      $scope.data.messages.push(message);
+    .then(function() {
+      console.log('POSTED IN CHAT.JS')
     })
+    $scope.newMessage = '';
   }
+
   $scope.checkLength = function (num, message) {
-    console.log(num === message.message.length)
+    // if (message.message.length === 6) {console.log(message.message.length);}
     return num === message.message.length;
   }
   $scope.getMessages();
+  setInterval($scope.getMessages, 1000);
 
 });

@@ -10,17 +10,28 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client'));
 
 mongoose.connect('mongodb://localhost/codeChat'); // connect to mongo database named shortly
+Message.remove({}, function(err) {});
 
 app.post('/message' , function(req, res) {
-
-  Message.create({message: helpers.codify(req.body.message), createdAt: Date.now()}).save(function(err) {
-    if (err) {console.error(err);}
-  });
+  console.log(req.body);
+  Message.create({message: helpers.codify(req.body.message), createdAt: Date.now()})
   // req.body.message = helpers.codify(req.body.message);
   // res.send(req.body);
 });
 
+app.get('/message', function(req, res) {
+  Message.find()
+  .exec(function(err, message) {
+    if (err) {console.error(err);}
+    res.send(message);
+  });
+});
+
 app.listen(8000);
+
+
+
+// add sockets
 
 
 /* Walkthrough of the server
