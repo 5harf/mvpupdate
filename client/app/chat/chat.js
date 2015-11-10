@@ -1,7 +1,6 @@
 angular.module('chat', [])
 
 .controller('ChatCtrl', function ($scope, Send) {
-  // Your code here
   $scope.data = {};
   $scope.getMessages = function () {
     Send.getMessages()
@@ -18,7 +17,6 @@ angular.module('chat', [])
   }
 
   $scope.checkLength = function (num, message) {
-    // if (message.message.length === 6) {console.log(message.message.length);}
     return num === message.message.length;
   }
   $scope.getMessages();

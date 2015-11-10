@@ -4,26 +4,13 @@
     <meta charset="utf-8" />
     <title>Code Chat</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
   </head>
   <body>
-    <!-- <h1>Code Chat</h1> -->
-  <!--   <div class='navigation'>
-      <ul>
-        <li><a href='#/Friends' class='index'>All Links</a></li>
-        <li><a href='#/shorten' class='create'>Shorten</a></li>
-      </ul>
-      <a href='#/logout' class='logout'>Logout</a>
-    </div> -->
-
-    <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+   
     <div id="messages" ui-view></div>
 
     <script src="lib/angular/angular.js"></script>
     <script src="/app/lib/angular-ui-router/release/angular-ui-router.js"></script>
-
-    <!-- // <script src="app/auth/auth.js"></script> -->
-    <!-- // <script src="app/links/links.js"></script> -->
     <script src="app/services/send.js"></script>
     <script src="app/chat/chat.js"></script>
     <script src="app/app.js"></script>
