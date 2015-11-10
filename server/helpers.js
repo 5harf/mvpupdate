@@ -13,6 +13,9 @@ exports.codify = function(message) {
     capitalizeIndex(2, ary);
     capitalizeIndex(5, ary);
   }
+  if (ary.length === 17) {
+    capitalizeIndex(16, ary);
+  }
   return ary;
 }
 
