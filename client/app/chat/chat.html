@@ -1,9 +1,19 @@
 <div ng-controller="ChatCtrl" id='container'>
-<!-- Your code here -->
-  <ul>
+<!--   var one = 'var WORD;'
+  var two = 'var WORD = WORD;'
+  var three = ''
+  var four = 'var WORD = function (WORD, WORD) {return WORD;};' -->
+  <div ng-repeat="message in data.messages | orderBy:'createdAt'">
+    <div ng-show="checkLength(1,message)"><span style="color:blue">var </span>{{message.message[0]}};</div>
+    <div ng-show="checkLength(2,message)"><span style="color:blue">var </span>{{message.message[0]}} <span style="color:blue">=</span> {{message.message[1]}};</div>
+    <div ng-show="checkLength(3,message)"><span style="color:blue">var </span>{{message.message[0]}} <span style="color:blue">=</span> {{message.message[1]}}{{message.message[2]}};</div>
+    <div ng-show="checkLength(4,message)"><span style="color:blue">var </span>{{message.message[0]}} <span style="color:blue">= function </span>({{message.message[1]}}, {{message.message[2]}}) {<span style="color:blue">return</span> {{message.message[3]}}};</div>
+  </div> 
+
+ <!--  <ul>
     <li ng-repeat="message in data.messages">{{message.username}}: {{message.message}}</li>
-  </ul>
-<form name="myForm">
+  </ul> -->
+<form name="myForm" id="invisible">
   <input name="urlInput" ng-model='newMessage' required/> 
 </form>
 

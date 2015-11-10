@@ -5,10 +5,9 @@ angular.module('codeChat.services', [])
   var getMessages = function () {
 
     return [
-    {username: 'Jackson', message: 'Hello, how is the weather today in San Francisco?', createdAt: 5},
-    {username: 'Jackson', message: 'Hello, how is the weather today in San Francisco?', createdAt: 5},
-    {username: 'Jackson', message: 'Hello, how is the weather today in San Francisco?', createdAt: 5}
-    ];
+    // 'Hello, how is the weather in San Francisco today?'.split(' '), 'Countless Brits are still waiting to return home amid travel chaos.'.split(' '), ['Why?'], ['what is up?']
+    {message:['yes'], createdAt:2}, {message:['why', 'not?'], createdAt:1}, {message:['However,', 'are', 'you', 'inside'], createdAt:3}, {message:['I', 'am', 'not'], createdAt:-1}
+      ];
     // return $http({
     //   method: 'GET',
     //   url: '/api/links'
@@ -20,7 +19,18 @@ angular.module('codeChat.services', [])
   };
 
   var sendMessage = function(message) {
-
+    console.log('sent message');
+    return $http({
+      method: 'POST',
+      url: 'http://localhost:8000/message',
+      data: {
+        username: 'Jack',
+        message: message
+      }
+    })
+    .then(function (res) {
+      return res.data;
+    });
   };
 
   // var addLink = function (link) {

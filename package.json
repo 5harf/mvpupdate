@@ -1,0 +1,25 @@
+{
+  "name": "code-chat",
+  "version": "1.0.0",
+  "description": "chat in javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5harf/2015-10-mvp.git"
+  },
+  "author": "Jackson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5harf/2015-10-mvp/issues"
+  },
+  "homepage": "https://github.com/5harf/2015-10-mvp#readme",
+  "dependencies": {
+    "angular-ui-router": "^0.2.15",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.4"
+  }
+}

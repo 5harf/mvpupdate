@@ -51,7 +51,7 @@ Code Chat
 
 Code Chat is a way for any programmer to freely communicate with whomever they please while appearing to be diligently coding away in the programming language of your choice.
 
-Code Chat is a web application that allows you to chat with whomever you want, whenever you want, while appearing to be writing code.  Code Chat will take all of your sent and recieved messages and display them as beautiful javascript code.  Code Chat is the perfect application to use in class, at work or any other time when you really should be programming instead of chatting with your friends.
+Code Chat is a web application that allows you to chat with whomever you want, whenever you want, all while appearing to be writing code.  Code Chat will take all of your sent and recieved messages and display them as beautiful javascript code.  Code Chat is the perfect application to use in class, at work or any other time when you really should be programming instead of chatting with your friends.
 
 Strict managers or professors who do not allow the use of instant messaging services during work or class force us to put our lives on hold while in that environment.  
 
