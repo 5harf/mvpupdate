@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost/codeChat');
 Message.remove({}, function(err) {});
 
 app.post('/message' , function(req, res) {
-  Message.create({message: helpers.codify(req.body.message), createdAt: Date.now()}, function() {
+  Message.create({message: helpers.codify(req.body.message), createdAt: Date.now(), text: req.body.message}, function() {
     res.end();
   });
 });

@@ -20,7 +20,15 @@ body {
   font-family: "Lucida Console", Monaco, monospace;
 }
 
-html { 
+html {
+  background: url('../assets/matrix.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html.chat{ 
   background: url('../assets/rep.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;

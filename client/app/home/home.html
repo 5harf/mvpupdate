@@ -1,0 +1,13 @@
+<script>
+$('html').removeClass('chat');
+</script>
+
+<div ng-controller="HomeCtrl" id='container'>
+  <form name="signinForm" ng-submit=''>
+    <input type='text'ng-model='user.username'>
+    <input type="password" ng-model='user.password'>
+    <button>signin</button>
+  </form>
+  <a href="#/signup">Don't have an account? <strong>Signup</strong> ...</a>
+
+</div>

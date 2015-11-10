@@ -7,9 +7,18 @@ angular.module('codeChat', [
   $urlRouterProvider.otherwise("/");
   $stateProvider
     .state('chat', {
-      url: "/",
+      url: "/chat",
       templateUrl: "app/chat/chat.html"
     })
+    .state('home', {
+      url: '/',
+      templateUrl: "app/home/home.html"
+    })
+    .state('signup', {
+      url: '/signup',
+      templateUrl: "app/signup/signup.html"
+    })
+
 
 });
 

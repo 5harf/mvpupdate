@@ -1,3 +1,7 @@
+<script>
+$('html').addClass('chat');
+</script>
+
 <div ng-controller="ChatCtrl" id='container'>
 
   <div ng-repeat="message in data.messages | orderBy:'createdAt'">

@@ -20,6 +20,7 @@
     "angular-ui-router": "^0.2.15",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "mongoose": "^4.2.4"
+    "mongoose": "^4.2.4",
+    "passport-local": "^1.0.0"
   }
 }
